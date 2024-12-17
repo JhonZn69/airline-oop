@@ -14,6 +14,12 @@ public class Passenger {
         this.surname = surname;
         this.seatNumber = seatNumber;
     }
+    public void showInfoPassenger(){
+        System.out.println("NIF del pasajero: " + getNif());
+        System.out.println("Nombre del pasajero: " + getName());
+        System.out.println("Apellido del pasajero: " + getSurname());
+        System.out.println("Numero de asiento del pasajero: " + getSeatNumber());
+    }
 
     public String getNif() {
         return nif;

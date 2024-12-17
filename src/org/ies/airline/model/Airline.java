@@ -12,6 +12,15 @@ public class Airline {
         this.flights = flights;
     }
 
+    public Flight findFlightNumber(int flightNumber) {
+        for (Flight flight : flights) {
+            if (flight.getFlightNumber() == flightNumber) {
+                return flight;
+            }
+        }
+        return null;
+    }
+
     public String getName() {
         return name;
     }
@@ -34,6 +43,7 @@ public class Airline {
         Airline airline = (Airline) o;
         return Objects.equals(name, airline.name) && Objects.deepEquals(flights, airline.flights);
     }
+
 
     @Override
     public int hashCode() {

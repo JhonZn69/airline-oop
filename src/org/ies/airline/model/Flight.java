@@ -17,6 +17,14 @@ public class Flight {
         this.gateNumber = gateNumber;
         this.passengers = passengers;
     }
+    public Passenger findPassenger(String nif){
+        for (Passenger passenger: passengers){
+            if (passenger.getNif().equals(nif)){
+                return passenger;
+            }
+        }
+        return null;
+    }
 
     public int getFlightNumber() {
         return flightNumber;
