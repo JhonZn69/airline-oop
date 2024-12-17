@@ -23,5 +23,6 @@ public class AirlineAppMenu {
         scanner.nextLine();
         return option;
     }
+    public void run() {
 
-}
+    }
